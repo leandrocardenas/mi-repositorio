@@ -67,7 +67,14 @@ footer {
     color: aliceblue;
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
    
+}
+
+.nav .paginas li a:hover {
+    color: #EAC7BD ;
+    font-size: 1.6em;
+
 }
 
 .nav .menu {
@@ -106,9 +113,16 @@ footer {
 .main .contenido .p2 .imgMain{
     height: 2em;
     width: 2em;
+    transition: 0.5s;
 }
 
-.footer{background: #781C1E;
+.main .contenido .p2 .imgMain:hover {
+    height: 2.3em;
+    width: 2.3em;
+}
+
+.footer{
+    background: #781C1E;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -116,11 +130,17 @@ footer {
 }
 
 .contenidoFooter .icon {
-
     width:25px;
     height:25px;
     margin: 7px; 
     position: relative;
+    transition: 0.5s;
+}
+
+.contenidoFooter .icon:hover {
+    opacity: 0.3;
+    height: 30px;
+    width: 30px;
 }
 
 .redes .redesTexto{
@@ -128,6 +148,7 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
 }
+
 
 /* Pagina Sucursal */
 
@@ -153,18 +174,32 @@ footer {
     width: 60%;
     border-radius: 5em;
     padding-top: 12px;
+    transition: 0.7s;
 
 }
 
+.mainSucursal p:hover {
+    padding-top: 23px;
+    height: 80px;
+    width: 70%;
+}
+
 .mainSucursal p a {
+    display: inline-block;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-size: 1.8em;
     list-style: none;
     text-decoration: none;
     text-align: center;
     color: black;
-    display: block;
+    display: inline-block;
     height: 20px;
+    width: 100%;
+    transition: 0.7s;
+}
+
+.mainSucursal p a:hover{
+    font-size: 2.2em;
 }
 
 .mainNosotros {
