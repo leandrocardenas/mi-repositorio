@@ -49,7 +49,8 @@ footer {
 .nav .logo {
     height: 90px;
     width: 90px;
-    justify-self: center;
+    padding-left: 20px;
+
 }
 
 
@@ -383,6 +384,12 @@ footer {
 
     .nav .paginasMover {
         transform: translateY(0%);
+    }
+
+    .nav .paginas li {
+        font-size: 2em;
+        text-align: center;
+
     }
 
     .footer{background: #781C1E;
