@@ -335,6 +335,20 @@ footer {
     }
 }
 
+@media only screen and (max-width:800px) {
+    .nav {
+        padding: 0;
+        padding-right: 6%;
+        font-size: 0.6em;
+    }
+
+    .nav .logo {
+        height: 65px;
+        width: 65px;
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width:769px) {
     
     .nav {
