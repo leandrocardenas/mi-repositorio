@@ -243,6 +243,28 @@ footer {
 
 @media only screen and (max-width:719px) {
     
+    .nav .paginas {
+        position: absolute;
+        width: 96%;
+        height: 60vh;
+        display: grid;
+        align-items: center;
+        background-color: #781C1E;
+        margin-top: 67em;
+        z-index: 1;
+        transform: translateY(-190%);
+        transition: all 0.5s;
+    }
+
+    .nav .paginasMover {
+        transform: translateY(0%);
+    }
+
+    .nav .paginas li {
+        font-size: 2em;
+        text-align: center;
+
+    }
 
     .nav .menu {
         display: block;
