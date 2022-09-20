@@ -8,51 +8,53 @@
     <link rel="shortcut icon" href="../img/PizzaHut.png">
     <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/752e0b6896.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,500;1,600&family=Quicksand&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header class="cabec">
-        <nav class="nav">
+        <nav class="nav navForm">
             <img class="logo" src="../img/PizzaHut.png" alt="logo pizzeria">
-            <ul class="paginas">
+            <ul class="paginas" id="paginas">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="sucursales.html">Nuestras sucursales</a></li>
                 <li><a href="nosotros.html">Quienes somos</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
-            <div class="menu">
+            <div class="menu" id="menu-bar">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <div class="mainForm">
+    <main class="mainForm">
 
-        <h1 class="Titulo">Contactanos</h1>
+        <h1 class="titulo">Contactanos</h1>
 
-        <div>
-            <div class="contactanosForm">
+        <div class="contactanosForm">
+            <div class="form">
+
                 <form>
                     <p>
-                        <label>Nombre</label>
-                        <input type="text" name="Nombre">
+                        <label for="nombreForm">Nombre</label>
+                        <input type="text" name="Nombre" id="nombreForm">
                     </p>
                     <p>
-                        <label>Apellido</label>
-                        <input type="text" name="apellido">
+                        <label for="apellidoForm">Apellido</label>
+                        <input type="text" name="apellido" id="apellidoForm">
                     </p>
                     <p>
-                        <label>Numero de telefono</label>
-                        <input type="tel" name="telefono">
+                        <label for="numeroForm">Numero de telefono</label>
+                        <input type="tel" name="telefono" id="numeroForm">
                     </p>
                     <p>
-                        <label>Email</label>
-                        <input type="email" name="email">
+                        <label for="emailForm">Email</label>
+                        <input type="email" name="email" id="emailForm">
                     </p>
                     <p class="mensaje">
-                       <label>Mensaje</label> 
-                        <textarea name="mensaje" rows="4"></textarea>
+                       <label for="mensajeForm">Mensaje</label> 
+                        <textarea name="mensaje" id="mensajeForm" rows="4"></textarea>
                     </p>
                     <p class="boton">
                         <button type="submit">
@@ -61,21 +63,21 @@
                     </p>
                 </form>
             </div>
-            <div class="contact-info">
+            <div class="contactanosInfo">
                 <h4>Para mas informacion</h4>
-                <ul>
-                    <li><i class=""></i> Calle 124</li>
-                    <li><i class=""></i> (+54) 11 1234 5678 </li>
-                    <li><i class=""></i> contacto@website.com</li>
+                <ul> 
+                    <li><i class="fa-sharp fa-solid fa-location-dot"></i> Calle 124</li>
+                    <li><i class="fa-sharp fa-solid fa-phone"></i> (+54) 11 1234 5678 </li>
+                    <li><i class="fa-sharp fa-solid fa-envelope"></i> contacto@website.com</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
-                <p>pizzahot.com</p>
+                <h4>pizzahot.com</h4>
             </div>
         </div>
 
-    </div>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer footerForm">
         <div class="contenidoFooter">
             <a href="#">
                 <img src="https://pnggrid.com/wp-content/uploads/2021/07/Facebook-Logo-Square-768x768.png" class="icon"></a>
@@ -93,5 +95,7 @@
              <i class="redesTexto"> Seguinos en nuestras redes sociales</i> 
         </div>
     </footer>
+
+    <script src="../script.js"></script>
 </body>
 </html>
