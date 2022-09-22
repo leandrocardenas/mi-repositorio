@@ -1,0 +1,51 @@
+
+header{
+    .nav {
+    background-color: $backgroundColorNav;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    height: 100%;
+    min-height: 20vh;
+    max-height: 20vh;
+
+        .logo {
+        height: 90px;
+        width: 90px;
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+        .menu {
+        grid-column: 9/10;
+        display: none;
+    }
+
+        .paginas {
+        grid-column: 3/9;
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            list-style: none;
+            font-size: 1.3em;
+            
+            a {
+                text-decoration: none;
+                color: aliceblue;
+                cursor: pointer;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                transition: .5s;
+                    &:hover {
+                        color: beige;
+                    }
+                
+                }
+            
+            }
+        }
+
+    }
+
+}
+
