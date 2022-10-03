@@ -1,11 +1,7 @@
 .footer{
+    @include footerMixin;
     background: #781C1E;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 18vh;
-    max-height: 18vh;
+
     .contenidoFooter{
         .icon {
             width:25px;
