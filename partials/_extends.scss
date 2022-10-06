@@ -1,0 +1,10 @@
+
+%navDefault {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    height: 100%;
+    min-height: 20vh;
+    max-height: 20vh;
+    
+}
