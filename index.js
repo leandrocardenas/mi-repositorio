@@ -12,7 +12,7 @@ const productos = [
 
 ];
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 productos.forEach((producto)=> {
     let contenido = document.createElement("div");
@@ -53,12 +53,19 @@ productos.forEach((producto)=> {
 
     }
         console.log(carrito);
-        carritoCounter()
+        console.log(carrito.length);
+        carritoCounter();
+        saveLocal();
 
     });
 
 
 });
+
+const saveLocal = () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+};
+
 
 
 
@@ -131,11 +138,23 @@ const eliminarProducto = () => {
         return carritoId !== foundId;
     });
 
+    carritoCounter();
+    saveLocal();
     pintarCarrito();
 
 }
 
 const carritoCounter = () => {
     cantidadCarrito.style.display = "block";
-    cantidadCarrito.innerText = carrito.length;
-}
+
+    const  carritoLength = carrito.length;
+
+    localStorage.setItem("carritoLength", JSON.stringify(carritoLength))
+
+    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
+};
+
+carritoCounter();
+
+
+
