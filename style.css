@@ -152,6 +152,15 @@ body {
     display: none;
   }
 
+  .sumar {
+    cursor: pointer;
+  }
+
+  .restar {
+    cursor: pointer;
+  }
+  
+
   
   @media only screen and (max-width: 750px) {
     .modal-contenido {
